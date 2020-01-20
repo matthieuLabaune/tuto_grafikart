@@ -1,4 +1,4 @@
-<?php
+<?php /** @noinspection PhpInconsistentReturnPointsInspection */
 
 function repondre_oui_non($phrase)
 {
@@ -33,7 +33,7 @@ function demander_creneau($phrase = 'Veuillez entrer un creneau ')
 $creneau2 = demander_creneau('Veuillez entrer votre creneau ');
 
 
-function demander_creneaux(string $phrase = "Veuillez entrer vos créneaux")
+function demander_creneaux($phrase = 'Veuillez entrer vos créneaux');
 {
     $creneaux = [];
     $continuer = true;
