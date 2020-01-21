@@ -19,5 +19,12 @@ function nav_menu(string $linkClass = ''): string
         nav_item('/contact.php', 'Contact', $linkClass);
 }
 
-
+function checkbox(string $name, string $value, array $data): string
+{
+$attribute ='';
+$attribute .= 'checked';
+  return <<<HTML
+  <input type="checkbox" name="{$name}[]" value="$value" $attribute>
+  HTML ;
+}
 ?>
